@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(235deg, #4A90E2, #A8C0FF);
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            border-radius: 12px;
+            padding: 30px;
+            background-color: #ffffff;
+            width: 40%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+
+        .container h1 {
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 24px;
+        }
+
+
+        .container div {
+            display: flex;
+            gap: 15px;
+        }
+
+
+        .container a {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .container a:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 80%;
+                padding: 20px;
+            }
+
+            .container div {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .container a {
+                width: 100%;
+                text-align: center;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Choose!</h1>
+            <div>
+                <a href="/new">Input Users Information</a>
+                <a href="/view_entries">View User Information</a>
+            </div>
+        </div>
+    </body>
+</html>
